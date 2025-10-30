@@ -1,16 +1,51 @@
 body {
+    text-align: center;
+    background: url(https://avatars.mds.yandex.net/i?id=005f1b729ddead49ffa8a270e99bf4d55d96ceec-4328288-images-thumbs&n=13);
     font-family: Arial,  sans-serif; /* Семейство шрифтов */
-    font-size: 15px; /* Размер основного шрифта в <p></p>  */
-    background-color: #ddcce7; /* Цвет фона веб-страницы */
-    color: #292929; /* Цвет основного текста */ 
+    font-size: 17px; /* Размер основного шрифта в <p></p>  */
+    background-color: rgb(28, 24, 37);
+    color: #c1b7ff; /* Цвет основного текста */ 
+    
 }
+
+@keyframes color-change {
+    0%   { color: rgb(255, 99, 27); }
+    25%  {color: rgb(255, 122, 104); }
+    50%  {color: rgb(255, 30, 30); }
+    75%  {color:rgb(255, 122, 104); }
+    100% { color: rgb(255, 99, 27); }
+}
+
 h1 {
-    color: #2a066b; /* Цвет заголовка */
-    font-size: 36px; /* Размер шрифта в пунктах */
-    font-family: Georgia, serif; /* Семейство шрифтов */
+    animation: color-change 5s infinite;
+
+    text-align: center;
+    color: #ff754b; /* Цвет заголовка */
+    font-size: 34px; /* Размер шрифта в пунктах */
+    font-family: fantasy; /* Семейство шрифтов */
+}
+@keyframes color-change1 {
+    0%   { color: #ff922d; }
+    25%  {color: rgb(255, 176, 57); }
+    50%  {color: rgb(255, 113, 57); }
+    75%  {color: rgb(255, 176, 57); }
+    100% { color: #ff922d; }
 }
 h2 {
-    color:rgb(21, 0, 71);
+    animation: color-change1 5s infinite;
+
+    text-align: center;
+    color:#9cffb3;
+    text-decoration-line: underline;
+    text-decoration-color: #508f5f;
     font-size: 28px;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: 'Courier New', Courier, monospace
+}
+ul {
+    text-align: left;
+    font-size: 16px;
+}
+p {
+    text-align: initial;
+    font-size: 17px;
 }
